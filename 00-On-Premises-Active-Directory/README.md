@@ -1,6 +1,8 @@
 # Lab Active Directory local
 
-**État** · En cours
+**État** · En attente
+
+La documentation et les diagnostics historiques sont conservés. Les vérifications du lab SRV01 reprendront au [module 08 — Identité hybride](../08-Hybrid-Identity/README.md), en préparation de l’intégration avec Microsoft Entra ID.
 
 ## Objectif technique
 
@@ -45,7 +47,7 @@ Voir le [diagnostic DNS du contrôleur de domaine](../troubleshooting/dns-domain
 
 Les sorties historiques permettent de documenter la lecture des diagnostics d’un contrôleur de domaine et l’identification d’un résolveur incapable de répondre aux requêtes sur les enregistrements de service AD.
 
-## Exercices prévus
+## Vérifications reportées au module 08
 
 - Vérifier AD DS et le DNS côté serveur et côté client.
 - Confirmer la jonction de Windows 11, le canal sécurisé et la connexion d’un utilisateur du domaine.

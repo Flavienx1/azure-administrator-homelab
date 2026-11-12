@@ -1,6 +1,6 @@
 # Architecture du lab
 
-Le schéma représente le lab VirtualBox décrit et les composants identifiés dans les diagnostics AD historiques. Le lien en pointillés indique les vérifications à effectuer sur le client actuel. Le nom de domaine et l’adressage seront documentés après confirmation.
+Le schéma représente le lab VirtualBox décrit et les composants identifiés dans les diagnostics AD historiques. Le lien en pointillés indique les vérifications du client reportées au module 08. Le nom de domaine et l’adressage seront documentés après confirmation.
 
 ```mermaid
 flowchart TB
