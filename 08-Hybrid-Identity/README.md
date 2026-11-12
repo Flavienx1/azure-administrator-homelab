@@ -4,7 +4,7 @@
 
 ## Objectif
 
-Relier un annuaire local vérifié à un tenant de test et valider la synchronisation.
+Reprendre le [lab Active Directory local](../00-On-Premises-Active-Directory/README.md) sur SRV01 (Windows Server 2022), vérifier sa configuration, puis travailler sur son intégration avec un tenant Microsoft Entra ID de test et valider la synchronisation.
 
 ## Compétences visées
 

@@ -1,6 +1,6 @@
 # Diagnostic DNS du contrôleur de domaine
 
-**État** · En cours
+**État du suivi** · En attente jusqu’au module 08
 
 ## Objectif technique et environnement
 

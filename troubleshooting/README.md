@@ -1,6 +1,6 @@
 # Dépannage et résolution d’incidents
 
-**État** · En cours
+Ce dossier conserve les cas documentés du lab. Les vérifications du diagnostic DNS local reprendront au module 08.
 
 | Cas | État des preuves |
 | --- | --- |
