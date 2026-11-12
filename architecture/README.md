@@ -1,16 +1,16 @@
-# Lab architecture
+# Architecture du lab
 
-The local topology reflects the reported VirtualBox lab and historical AD diagnostics. Dashed edges show relationships to verify on the current client. The domain name and addressing are omitted pending confirmation.
+Le schéma représente le lab VirtualBox décrit et les composants identifiés dans les diagnostics AD historiques. Le lien en pointillés indique les vérifications à effectuer sur le client actuel. Le nom de domaine et l’adressage seront documentés après confirmation.
 
 ```mermaid
 flowchart TB
-    subgraph Lab["VirtualBox lab"]
-        Client["Windows 11 client VM"]
-        DC["Windows Server 2022 VM · AD DS and DNS"]
+    subgraph Lab["Lab VirtualBox"]
+        Client["VM cliente Windows 11"]
+        DC["VM Windows Server 2022 · AD DS et DNS"]
     end
-    Client -.->|"DNS discovery and domain membership"| DC
+    Client -.->|"Découverte DNS et jonction au domaine"| DC
 ```
 
-DHCP, GPO and SMB appear in the [AD validation checklist](../00-On-Premises-Active-Directory/evidence-checklist.md). Microsoft Entra ID work is tracked in the [identity module](../01-Microsoft-Entra-ID/README.md). Hybrid synchronization is a [planned exercise](../08-Hybrid-Identity/README.md).
+Les contrôles DHCP, GPO et SMB figurent dans la [liste des vérifications AD](../00-On-Premises-Active-Directory/evidence-checklist.md). Le travail sur Microsoft Entra ID est suivi dans le [module d’identité](../01-Microsoft-Entra-ID/README.md). La synchronisation hybride fait partie des [exercices prévus](../08-Hybrid-Identity/README.md).
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

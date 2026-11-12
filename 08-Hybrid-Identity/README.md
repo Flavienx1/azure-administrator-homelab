@@ -1,21 +1,21 @@
-# Hybrid identity
+# Identité hybride
 
-**Module status:** Planned
+**État du module** · Prévu
 
-## Objective
+## Objectif
 
-Connect a verified local directory to a test tenant and validate synchronization.
+Relier un annuaire local vérifié à un tenant de test et valider la synchronisation.
 
-## Target skills
+## Compétences visées
 
-Directory synchronization, scoped rollout and device identity.
+Synchronisation d’annuaires, déploiement à portée limitée et identité des appareils.
 
-## Planned exercises
+## Exercices prévus
 
-- Verify the local AD baseline and document UPN suffix, tenant and sync prerequisites.
-- Scope Microsoft Entra Connect Sync to a test OU and verify object synchronization.
-- Evaluate hybrid join and collect device registration evidence. Review AD FS and Intune dependencies.
+- Vérifier l’environnement AD local et documenter les prérequis liés au suffixe UPN, au tenant et à la synchronisation.
+- Limiter Microsoft Entra Connect Sync à une OU de test et vérifier la synchronisation des objets.
+- Évaluer le hybrid join et collecter les preuves d’inscription des appareils. Examiner les dépendances AD FS et Intune.
 
-Use the [exercise template](../exercise-template.md) to record configuration steps and observed results.
+Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

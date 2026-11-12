@@ -1,5 +1,5 @@
 # Scripts
 
-Add PowerShell and Azure CLI scripts alongside links to the exercises that used them. Document prerequisites, parameters, required permissions, expected output and any changes the script makes. Use placeholders for environment values and record where each script was tested.
+Ajouter les scripts PowerShell et Azure CLI avec un lien vers les exercices qui les utilisent. Documenter les prérequis, les paramètres, les autorisations nécessaires, la sortie attendue et les modifications effectuées par le script. Utiliser des valeurs de remplacement pour les paramètres propres à l’environnement et indiquer où chaque script a été testé.
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

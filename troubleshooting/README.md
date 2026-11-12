@@ -1,9 +1,9 @@
-# Troubleshooting & Incident Resolution
+# Dépannage et résolution d’incidents
 
-**Status:** In progress
+**État** · En cours
 
-| Case | Evidence status |
+| Cas | État des preuves |
 | --- | --- |
-| [Domain controller DNS diagnostics](dns-domain-controller-discovery.md) | Initial failure documented. Follow-up pass reported. Exact corrective change pending confirmation. |
+| [Diagnostic DNS du contrôleur de domaine](dns-domain-controller-discovery.md) | Échec initial documenté. Réussite ultérieure signalée. Correctif exact à confirmer. |
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

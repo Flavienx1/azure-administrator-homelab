@@ -1,22 +1,22 @@
-# Azure governance and RBAC
+# Gouvernance Azure et RBAC
 
-**Module status:** Planned
+**État du module** · Prévu
 
-## Objective
+## Objectif
 
-Organize resources and validate least-privilege access.
+Organiser les ressources et vérifier le principe du moindre privilège.
 
-## Target skills
+## Compétences visées
 
-Resource hierarchy, Azure RBAC scope, Policy and cost controls.
+Hiérarchie des ressources, portée du RBAC, Azure Policy et maîtrise des coûts.
 
-## Planned exercises
+## Exercices prévus
 
-- Map tenant, management group, subscription, resource group and resource scopes.
-- Test role inheritance and a denied operation with a limited test identity.
-- Apply tags, a policy in audit mode, and a resource lock. Check compliance and lock behavior.
-- Configure a budget alert and document expected costs.
+- Cartographier les portées du tenant, des groupes d’administration, des abonnements, des groupes de ressources et des ressources.
+- Tester l’héritage des rôles et vérifier le refus d’une opération avec une identité aux droits limités.
+- Appliquer des tags, une Azure Policy en mode audit et un verrou de ressource. Vérifier la conformité et l’effet du verrou.
+- Configurer une alerte budgétaire et documenter les coûts prévisionnels.
 
-Use the [exercise template](../exercise-template.md) to record configuration steps and observed results.
+Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

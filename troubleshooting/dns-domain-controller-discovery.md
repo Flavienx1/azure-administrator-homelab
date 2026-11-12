@@ -1,25 +1,25 @@
-# Domain controller DNS diagnostics
+# Diagnostic DNS du contrôleur de domaine
 
-**Status:** In progress
+**État** · En cours
 
-## Technical objective and environment
+## Objectif technique et environnement
 
-Investigate a DNS diagnostic failure on the Windows Server 2022 domain controller in the VirtualBox Active Directory lab. This case concerns the domain configuration that existed when the diagnostics were captured.
+Analyser un échec du diagnostic DNS sur le contrôleur de domaine Windows Server 2022 du lab Active Directory sous VirtualBox. Ce cas concerne la configuration du domaine au moment de la collecte des diagnostics.
 
-## Diagnostic procedure
+## Procédure de diagnostic
 
-The historical diagnostic used the Windows domain controller diagnostics tool (`dcdiag`). Its output included the connectivity and DNS tests. The [current validation checklist](../00-On-Premises-Active-Directory/evidence-checklist.md) gives the targeted commands to reproduce those checks on the current lab.
+Le diagnostic historique a utilisé l’outil Windows `dcdiag`. Sa sortie comprenait les tests de connectivité et de DNS. La [liste des vérifications](../00-On-Premises-Active-Directory/evidence-checklist.md) indique les commandes ciblées pour refaire ces tests sur le lab actuel.
 
-## Diagnosis
+## Diagnostic
 
-The domain controller passed the connectivity test. The enterprise DNS test failed. Its output showed that the external resolver could not resolve an AD LDAP service record. The internal resolver returned AD-related records in the diagnostic excerpt. Clients use these service records to locate domain controllers, so resolver selection matters even when basic network connectivity succeeds.
+Le contrôleur de domaine a réussi le test de connectivité. Le test DNS à l’échelle de l’annuaire a échoué. La sortie indiquait que le résolveur externe ne parvenait pas à résoudre un enregistrement de service LDAP d’AD. Le résolveur interne renvoyait des enregistrements AD dans l’extrait examiné. Les clients utilisent ces enregistrements pour localiser les contrôleurs de domaine. Le choix du résolveur compte donc même lorsque la connectivité réseau de base fonctionne.
 
-## Corrective action and validation
+## Correctif et validation
 
-The lab owner later reported that the domain DNS test passed. The exact resolver change and full passing output are pending confirmation. The [evidence checklist](../00-On-Premises-Active-Directory/evidence-checklist.md) describes how to retest the current configuration.
+Une réussite ultérieure du test DNS du domaine a été signalée. La modification exacte du résolveur et la sortie complète du test réussi restent à confirmer. La [liste des vérifications](../00-On-Premises-Active-Directory/evidence-checklist.md) décrit comment retester la configuration actuelle.
 
-## Evidence and skills
+## Preuves et compétences
 
-Historical diagnostic output supports the initial failure and the distinction between network connectivity and AD DNS resolution. The later pass is a reported result. A sanitized screenshot or output excerpt for the follow-up run remains to be collected.
+La sortie historique documente l’échec initial et permet de distinguer la connectivité réseau de la résolution DNS des services AD. La réussite ultérieure repose sur un résultat rapporté. Il reste à collecter une capture ou un extrait anonymisé du nouveau test.
 
-[Incident index](README.md)
+[Liste des incidents](README.md)

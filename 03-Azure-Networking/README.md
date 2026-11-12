@@ -1,21 +1,21 @@
-# Azure networking
+# Réseau Azure
 
-**Module status:** Planned
+**État du module** · Prévu
 
-## Objective
+## Objectif
 
-Build private connectivity and diagnose traffic flows.
+Mettre en place une connectivité privée et diagnostiquer les flux réseau.
 
-## Target skills
+## Compétences visées
 
-Subnet design, network filtering, name resolution and connectivity diagnostics.
+Conception de sous-réseaux, filtrage, résolution de noms et diagnostic de connectivité.
 
-## Planned exercises
+## Exercices prévus
 
-- Build VNets and subnets. Compare NSG and ASG rules with allowed and denied traffic tests.
-- Test peering and private DNS resolution from connected networks.
-- Evaluate Bastion and point-to-site VPN. Document the requirements for site-to-site VPN and Azure Firewall.
+- Créer des VNets et des sous-réseaux. Comparer les règles NSG et ASG à l’aide de tests de trafic autorisé et refusé.
+- Tester le peering et la résolution DNS privée depuis les réseaux connectés.
+- Évaluer Azure Bastion et le VPN point à site. Documenter les prérequis du VPN site à site et d’Azure Firewall.
 
-Use the [exercise template](../exercise-template.md) to record configuration steps and observed results.
+Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

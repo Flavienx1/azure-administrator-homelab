@@ -1,21 +1,21 @@
-# Monitoring and security
+# Supervision et sécurité
 
-**Module status:** Planned
+**État du module** · Prévu
 
-## Objective
+## Objectif
 
-Collect telemetry, investigate events and review security recommendations.
+Collecter la télémétrie, analyser les événements et examiner les recommandations de sécurité.
 
-## Target skills
+## Compétences visées
 
-Diagnostic settings, KQL, alerting and posture assessment.
+Paramètres de diagnostic, KQL, alertes et évaluation de la posture de sécurité.
 
-## Planned exercises
+## Exercices prévus
 
-- Route diagnostic logs to Log Analytics and query them with KQL.
-- Create an alert and capture its trigger and notification.
-- Review Defender for Cloud recommendations, plan coverage and Azure Advisor findings.
+- Acheminer les journaux de diagnostic vers Log Analytics et les interroger en KQL.
+- Créer une alerte et relever son déclenchement et la notification reçue.
+- Examiner les recommandations de Defender for Cloud, la couverture des plans et les recommandations d’Azure Advisor.
 
-Use the [exercise template](../exercise-template.md) to record configuration steps and observed results.
+Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

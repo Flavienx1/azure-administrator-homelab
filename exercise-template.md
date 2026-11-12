@@ -1,39 +1,39 @@
-# Exercise title
+# Titre de l’exercice
 
-**Status:** Planned
+**État** · Prévu
 
-## Technical objective
+## Objectif technique
 
-Describe the capability and the acceptance criteria.
+Décrire la compétence travaillée, son contexte professionnel et les critères de réussite.
 
-## Architecture and prerequisites
+## Architecture et prérequis
 
-Record relevant services, topology, versions, access requirements, and dependencies. Add a diagram when the relationships are known.
+Indiquer les services concernés, la topologie, les versions, les accès nécessaires et les dépendances. Ajouter un schéma si les relations sont établies.
 
 ## Concepts
 
-Explain why the settings and services matter for this exercise.
+Expliquer le rôle des paramètres et des services utilisés dans l’exercice.
 
-## Configuration performed
+## Configuration réalisée
 
-Record the actual steps in order. Include PowerShell, Azure CLI, or portal procedures used, with sanitized parameters.
+Consigner les étapes suivies dans l’ordre. Inclure les commandes PowerShell ou Azure CLI et les étapes effectuées dans le portail, avec des paramètres anonymisés.
 
-## Screenshots and evidence
+## Captures d’écran et preuves
 
-Link to reviewed evidence and describe what each item shows.
+Lier les preuves vérifiées et préciser ce que chacune montre.
 
-## Validation and results
+## Validation et résultats
 
-| Check | Expected result | Observed result | Evidence |
+| Vérification | Résultat attendu | Résultat observé | Preuve |
 | --- | --- | --- | --- |
 | | | | |
 
-## Incidents and resolution
+## Incidents et résolution
 
-Record the symptom, diagnosis, change applied, and retest. Mark any unresolved issue as open.
+Consigner le symptôme, le diagnostic, le changement appliqué et le résultat du nouveau test. Marquer comme ouvert tout incident encore en cours.
 
-## Skills demonstrated
+## Compétences démontrées
 
-Tie each skill to an observed result or a documented action.
+Associer chaque compétence à un résultat observé ou à une action documentée.
 
-[Portfolio home](README.md)
+[Accueil du portfolio](README.md)
