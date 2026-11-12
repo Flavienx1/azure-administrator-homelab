@@ -1,7 +1,7 @@
-# Screenshots
+# Captures d’écran
 
-Store reviewed screenshots in a subfolder named after their module. Link each image from the exercise and caption it with the test or setting it shows. Use descriptive lowercase names such as `domain-membership.png`.
+Placer les captures vérifiées dans un sous-dossier portant le nom de leur module. Lier chaque image depuis l’exercice et préciser le test ou le paramètre qu’elle illustre. Choisir un nom descriptif en minuscules, par exemple `domain-membership.png`.
 
-Crop to the relevant UI. Remove credentials, tokens, recovery keys, personal information and identifying environment details. Review the final exported image and metadata before committing.
+Recadrer la capture sur la partie utile de l’interface. Masquer les identifiants de connexion, jetons, clés de récupération, données personnelles et détails permettant d’identifier l’environnement. Vérifier l’image exportée et ses métadonnées avant le commit.
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

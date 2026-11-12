@@ -1,55 +1,55 @@
-# On-premises Active Directory Lab
+# Lab Active Directory local
 
-**Status:** In progress
+**État** · En cours
 
-## Technical objective
+## Objectif technique
 
-Build and validate a Windows domain lab that supports domain discovery, client enrollment, group-based access, and policy application. Establish a verified baseline for later hybrid identity exercises.
+Construire et valider un domaine Windows permettant la découverte du contrôleur de domaine, la jonction d’un client, l’accès par groupe et l’application de stratégies. Établir une base vérifiée pour les futurs exercices d’identité hybride.
 
-## Architecture and prerequisites
+## Architecture et prérequis
 
-The reported environment uses VirtualBox, a Windows Server 2022 VM used as the lab server, and a Windows 11 client VM. The server has acted as an AD DS domain controller and DNS server. DHCP, Group Policy, and security groups are part of the reported lab scope.
+L’environnement décrit utilise VirtualBox, une VM Windows Server 2022 et une VM cliente Windows 11. Le serveur a tenu le rôle de contrôleur de domaine AD DS et de serveur DNS. DHCP, les GPO et les groupes de sécurité font partie du périmètre déclaré.
 
-See the [architecture diagram](../architecture/README.md). Confirm the current domain name, network mode, DHCP configuration and client membership before recording the baseline.
+Le [schéma d’architecture](../architecture/README.md) présente les composants. La vérification du nom de domaine, du mode réseau, de la configuration DHCP et de la jonction du client reste à effectuer.
 
-The client needs a Windows edition that supports AD domain join, network reachability to the controller, and a resolver that can answer queries for the AD zone.
+Le client a besoin d’une édition de Windows prenant en charge la jonction à un domaine AD, d’une connexion réseau au contrôleur et d’un résolveur capable d’interroger la zone DNS AD.
 
 ## Concepts
 
-AD DS provides domain identities and authentication. DNS SRV records let a client locate a domain controller. DHCP supplies IP configuration, including the DNS resolver when configured. Security groups let administrators assign access by role. Group Policy applies settings according to scope and filtering.
+AD DS gère les identités du domaine et leur authentification. Les enregistrements DNS SRV permettent au client de localiser un contrôleur de domaine. DHCP fournit les paramètres IP et, selon la configuration, l’adresse du résolveur DNS. Les groupes de sécurité permettent d’attribuer les accès selon les rôles. Les GPO appliquent des paramètres selon leur portée et leur filtrage.
 
-## Configuration performed
+## Configuration réalisée
 
-Historical diagnostic output identifies the server as a domain controller and shows AD-related DNS records on the internal DNS service. The exact promotion workflow and settings are pending confirmation. The lab owner reports that a Windows 11 VM was set up and that the domain configuration was updated after the historical diagnostics. The current domain name and Windows 11 membership need fresh checks.
+Les sorties de diagnostic historiques identifient le contrôleur de domaine et montrent des enregistrements AD renvoyés par le DNS interne. Les étapes et paramètres exacts de la promotion restent à confirmer. Une VM Windows 11 a été mise en place et une mise à jour de la configuration du domaine a été signalée après ces diagnostics. Le nom actuel du domaine et l’appartenance du client restent à vérifier.
 
-The historical work included Windows domain-controller diagnostics. See the [DNS troubleshooting case](../troubleshooting/dns-domain-controller-discovery.md) for the observed failure and follow-up. The [evidence checklist](evidence-checklist.md) contains commands proposed for the next validation pass.
+Le [cas de dépannage DNS](../troubleshooting/dns-domain-controller-discovery.md) présente l’échec observé et le suivi. La [liste des vérifications](evidence-checklist.md) donne les commandes à exécuter sur la configuration actuelle.
 
-## Screenshots and evidence
+## Captures d’écran et preuves
 
-Historical diagnostic excerpts were reviewed. The checklist identifies screenshots and command output to collect for the current configuration.
+Les extraits des diagnostics historiques ont été examinés. La liste des vérifications précise quelles captures et sorties de commandes collecter sur le lab actuel.
 
-## Validation and results
+## Validation et résultats
 
-| Check | Observed result | Evidence |
+| Vérification | Résultat observé | Preuve |
 | --- | --- | --- |
-| Historical domain-controller connectivity | Pass | Historical diagnostic excerpt, `Connectivity` test |
-| Historical enterprise DNS test | Initial failure. A subsequent pass was reported by the lab owner. | Historical output and follow-up report |
-| Current domain and client membership | Pending | Server identity, client domain membership, and secure channel |
-| Current DHCP, Group Policy, and group-based access | Pending | Lease, resultant policy, and access tests |
+| Connectivité du contrôleur de domaine lors du diagnostic historique | Réussite | Extrait du test `Connectivity` |
+| Test DNS historique | Échec initial, puis réussite signalée | Sortie historique et résultat rapporté |
+| Domaine actuel et jonction du client | À vérifier | Identité du serveur, appartenance au domaine et canal sécurisé |
+| DHCP, GPO et accès par groupe sur le lab actuel | À vérifier | Bail, stratégie appliquée et tests d’accès |
 
-## Incidents and resolution
+## Incidents et résolution
 
-See [Domain controller DNS diagnostics](../troubleshooting/dns-domain-controller-discovery.md).
+Voir le [diagnostic DNS du contrôleur de domaine](../troubleshooting/dns-domain-controller-discovery.md).
 
-## Skills demonstrated
+## Compétences démontrées
 
-Historical evidence documents interpretation of domain-controller diagnostics and identification of a resolver that could not answer AD service-record queries.
+Les sorties historiques permettent de documenter la lecture des diagnostics d’un contrôleur de domaine et l’identification d’un résolveur incapable de répondre aux requêtes sur les enregistrements de service AD.
 
-## Planned exercises
+## Exercices prévus
 
-- Verify the current AD DS and DNS baseline from both server and client.
-- Confirm the Windows 11 domain join, secure channel and domain-user sign-in.
-- Validate a DHCP lease, Group Policy application and group-based SMB access.
-- Record the outcomes of the previously practised DNS, DHCP, SMB and RDP diagnostics where evidence is available.
+- Vérifier AD DS et le DNS côté serveur et côté client.
+- Confirmer la jonction de Windows 11, le canal sécurisé et la connexion d’un utilisateur du domaine.
+- Valider un bail DHCP, l’application d’une GPO et les accès SMB attribués par groupe.
+- Consigner les résultats des exercices de diagnostic DNS, DHCP, SMB et RDP déjà pratiqués lorsque les preuves sont disponibles.
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

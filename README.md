@@ -1,43 +1,43 @@
-# Azure Administrator Homelab
+# Lab d’administration Azure
 
-I am building a hands-on administration portfolio as I move from IT Support (L1/L2) toward Azure Administrator, Cloud Engineer and DevOps Engineer roles. I earned Microsoft Azure Fundamentals (AZ-900). This repository records the configurations, validation results and troubleshooting decisions from my lab.
+Je développe ce portfolio pour documenter ma pratique de l’administration système et cloud. Mon parcours va du support IT N1/N2 vers les fonctions d’administrateur Azure, de Cloud Engineer puis de DevOps Engineer. J’ai obtenu la certification Microsoft Azure Fundamentals (AZ-900). Ce dépôt rassemble les configurations du lab, les résultats de validation et les décisions prises lors des diagnostics.
 
-## Environment
+## Environnement
 
-- Local lab: VirtualBox, Windows Server 2022, Active Directory Domain Services (AD DS), DNS, DHCP, Group Policy, SMB and a Windows 11 client.
-- Cloud lab: Microsoft Entra ID is the current area of study. Azure infrastructure and hybrid integration are scheduled in later modules.
+- **Lab local** · VirtualBox, Windows Server 2022, Active Directory Domain Services (AD DS), DNS, DHCP, GPO, SMB et un client Windows 11.
+- **Lab cloud** · Microsoft Entra ID est le premier module abordé. L’infrastructure Azure et l’intégration hybride sont prévues dans les modules suivants.
 
-See the [architecture diagram](architecture/README.md) for the reported local topology and its verification limits.
+Le [schéma d’architecture](architecture/README.md) présente la topologie locale et les éléments à vérifier.
 
-## Module progress
+## Avancement des modules
 
-| Module | Status | Objective |
+| Module | État | Objectif |
 | --- | --- | --- |
-| [On-premises Active Directory](00-On-Premises-Active-Directory/README.md) | In progress | Document the Windows domain and verify its current baseline. |
-| [Microsoft Entra ID](01-Microsoft-Entra-ID/README.md) | In progress | Manage identities, access and authentication in a cloud tenant. |
-| [Azure governance and RBAC](02-Azure-Governance-RBAC/README.md) | Planned | Organize resources and validate least-privilege access. |
-| [Azure networking](03-Azure-Networking/README.md) | Planned | Build private connectivity and diagnose traffic flows. |
-| [Azure compute](04-Azure-Compute/README.md) | Planned | Deploy and operate virtual machines with documented availability choices. |
-| [Azure storage](05-Azure-Storage/README.md) | Planned | Manage data access, redundancy and lifecycle. |
-| [Monitoring and security](06-Monitoring-Security/README.md) | Planned | Collect telemetry, investigate events and review security recommendations. |
-| [Backup and disaster recovery](07-Backup-Disaster-Recovery/README.md) | Planned | Prove data recoverability with a measured restore. |
-| [Hybrid identity](08-Hybrid-Identity/README.md) | Planned | Connect a verified local directory to a test tenant and validate synchronization. |
+| [Active Directory local](00-On-Premises-Active-Directory/README.md) | En cours | Documenter le domaine Windows et vérifier sa configuration actuelle. |
+| [Microsoft Entra ID](01-Microsoft-Entra-ID/README.md) | En cours | Gérer les identités, les accès et l’authentification dans un tenant cloud. |
+| [Gouvernance Azure et RBAC](02-Azure-Governance-RBAC/README.md) | Prévu | Organiser les ressources et vérifier le principe du moindre privilège. |
+| [Réseau Azure](03-Azure-Networking/README.md) | Prévu | Mettre en place une connectivité privée et diagnostiquer les flux réseau. |
+| [Calcul Azure](04-Azure-Compute/README.md) | Prévu | Déployer et exploiter des VM en documentant les choix de disponibilité. |
+| [Stockage Azure](05-Azure-Storage/README.md) | Prévu | Gérer les accès, la redondance et le cycle de vie des données. |
+| [Supervision et sécurité](06-Monitoring-Security/README.md) | Prévu | Collecter la télémétrie, analyser les événements et examiner les recommandations de sécurité. |
+| [Sauvegarde et reprise après sinistre](07-Backup-Disaster-Recovery/README.md) | Prévu | Vérifier la récupérabilité des données en chronométrant une restauration. |
+| [Identité hybride](08-Hybrid-Identity/README.md) | Prévu | Relier un annuaire local vérifié à un tenant de test et valider la synchronisation. |
 
-**Planned** indicates an exercise on the roadmap. **In progress** indicates work or documentation has started. **Validated** requires a recorded result and supporting evidence for the exercise. A module can contain exercises at different stages.
+**Prévu** désigne un exercice planifié. **En cours** signifie que la pratique ou la documentation a commencé. **Validé** exige un résultat consigné et une preuve. Les exercices d’un même module peuvent avancer à des rythmes différents.
 
-## Technical skills demonstrated
+## Compétences techniques démontrées
 
-- Interpreting historical domain controller connectivity and DNS diagnostics.
-- Distinguishing basic reachability from AD service discovery and identifying a resolver that could not answer the domain's locator query.
+- Interpréter les résultats historiques des tests de connectivité et de DNS d’un contrôleur de domaine.
+- Distinguer la connectivité réseau de la découverte des services AD et identifier le résolveur incapable de répondre à la requête de localisation du domaine.
 
-See the [DNS diagnostic case](troubleshooting/dns-domain-controller-discovery.md) for the evidence and outstanding verification.
+Le [cas de diagnostic DNS](troubleshooting/dns-domain-controller-discovery.md) détaille les observations et les vérifications restantes.
 
-## Progress log
+## Journal de progression
 
-| Date | Milestone |
+| Date | Étape |
 | --- | --- |
-| 2026-11-12 | Established the portfolio structure, documented the reported local lab and historical DNS diagnosis, and recorded the start of Microsoft Entra ID work. |
+| 2026-11-12 | Structure du portfolio, documentation initiale du lab local et du diagnostic DNS historique, début du travail sur Microsoft Entra ID. |
 
-## Project resources
+## Ressources du projet
 
-[Architecture](architecture/README.md) · [Troubleshooting](troubleshooting/README.md) · [Screenshots](screenshots/README.md) · [Scripts](scripts/README.md) · [Exercise template](exercise-template.md)
+[Architecture](architecture/README.md) · [Dépannage](troubleshooting/README.md) · [Captures d’écran](screenshots/README.md) · [Scripts](scripts/README.md) · [Modèle d’exercice](exercise-template.md)

@@ -1,21 +1,21 @@
-# Backup and disaster recovery
+# Sauvegarde et reprise après sinistre
 
-**Module status:** Planned
+**État du module** · Prévu
 
-## Objective
+## Objectif
 
-Prove data recoverability with a measured restore.
+Vérifier la récupérabilité des données en chronométrant une restauration.
 
-## Target skills
+## Compétences visées
 
-Backup policy, restore validation and recovery planning.
+Stratégies de sauvegarde, validation d’une restauration et planification de la reprise.
 
-## Planned exercises
+## Exercices prévus
 
-- Protect a test VM using a Recovery Services vault and check the recovery point.
-- Restore into an isolated target, verify the restored data and record elapsed time.
-- Compare backup with disk snapshots and document recovery time and recovery point objectives.
+- Protéger une VM de test avec un coffre Recovery Services et vérifier le point de récupération.
+- Restaurer vers une cible isolée, vérifier les données et relever la durée de l’opération.
+- Comparer les sauvegardes et les snapshots de disques, puis documenter les objectifs RTO et RPO.
 
-Use the [exercise template](../exercise-template.md) to record configuration steps and observed results.
+Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

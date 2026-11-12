@@ -1,23 +1,23 @@
 # Microsoft Entra ID
 
-**Module status:** In progress
+**État du module** · En cours
 
-## Objective
+## Objectif
 
-Manage identities, access and authentication in a cloud tenant.
+Gérer les identités, les accès et l’authentification dans un tenant cloud.
 
-## Target skills
+## Compétences visées
 
-Identity lifecycle, directory roles, authentication controls and log interpretation.
+Cycle de vie des identités, rôles d’annuaire, contrôles d’authentification et lecture des journaux.
 
-## Planned exercises
+## Exercices prévus
 
-- Create cloud users and compare security and Microsoft 365 groups.
-- Test assigned and dynamic membership where licensing permits.
-- Assign a scoped directory role and verify the allowed operation with a test account.
-- Review MFA, SSPR and sign-in logs. Test Conditional Access in report-only mode if licensed.
-- Compare registered, joined and hybrid-joined devices. Review guest access and audit logs.
+- Créer des utilisateurs cloud et comparer les groupes de sécurité et Microsoft 365.
+- Tester l’appartenance attribuée et dynamique selon les licences disponibles.
+- Attribuer un rôle d’annuaire à une portée définie et vérifier l’opération autorisée avec un compte de test.
+- Examiner MFA, SSPR et les journaux de connexion. Tester l’accès conditionnel en mode rapport uniquement si la licence le permet.
+- Comparer les appareils Entra registered, Entra joined et hybrid joined. Examiner les accès invités et les journaux d’audit.
 
-Use the [exercise template](../exercise-template.md) to record configuration steps and observed results.
+Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

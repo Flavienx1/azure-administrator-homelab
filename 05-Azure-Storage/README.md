@@ -1,21 +1,21 @@
-# Azure storage
+# Stockage Azure
 
-**Module status:** Planned
+**État du module** · Prévu
 
-## Objective
+## Objectif
 
-Manage data access, redundancy and lifecycle.
+Gérer les accès, la redondance et le cycle de vie des données.
 
-## Target skills
+## Compétences visées
 
-Storage authorization, data lifecycle, redundancy and file protocols.
+Autorisations de stockage, cycle de vie des données, redondance et protocoles de fichiers.
 
-## Planned exercises
+## Exercices prévus
 
-- Create Blob containers and Azure Files shares. Verify authorized and denied access.
-- Compare access tiers and redundancy options for a workload.
-- Test lifecycle policy behavior and evaluate SMB and NFS prerequisites.
+- Créer des conteneurs Blob et des partages Azure Files. Vérifier les accès autorisés et refusés.
+- Comparer les niveaux d’accès et les options de redondance pour une charge de travail.
+- Tester une stratégie de cycle de vie et examiner les prérequis SMB et NFS.
 
-Use the [exercise template](../exercise-template.md) to record configuration steps and observed results.
+Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)

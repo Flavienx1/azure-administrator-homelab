@@ -1,21 +1,21 @@
-# Azure compute
+# Calcul Azure
 
-**Module status:** Planned
+**État du module** · Prévu
 
-## Objective
+## Objectif
 
-Deploy and operate virtual machines with documented availability choices.
+Déployer et exploiter des VM en documentant les choix de disponibilité.
 
-## Target skills
+## Compétences visées
 
-VM provisioning, disk selection, availability planning and lifecycle management.
+Provisionnement de VM, choix des disques, disponibilité et gestion du cycle de vie.
 
-## Planned exercises
+## Exercices prévus
 
-- Deploy a VM and record image, size, disks and access method.
-- Validate an extension and compare availability zones, availability sets and scale sets.
-- Enable VM backup as part of the recovery module and document resource cleanup.
+- Déployer une VM et consigner son image, sa taille, ses disques et son mode d’accès.
+- Valider une extension et comparer les zones de disponibilité, les groupes à haute disponibilité et les Virtual Machine Scale Sets.
+- Activer la sauvegarde d’une VM dans le module de restauration et documenter le nettoyage des ressources.
 
-Use the [exercise template](../exercise-template.md) to record configuration steps and observed results.
+Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
 
-[Portfolio home](../README.md)
+[Accueil du portfolio](../README.md)
