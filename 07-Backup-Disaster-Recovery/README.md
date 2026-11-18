@@ -2,20 +2,12 @@
 
 **État du module** · Prévu
 
-## Objectif
+## Vérifier que je peux vraiment restaurer mes données
 
-Vérifier la récupérabilité des données en chronométrant une restauration.
+Je protégerai une VM de test avec un coffre Recovery Services. Je vérifierai qu’un point de récupération existe, puis je lancerai une restauration vers une cible isolée. J’ouvrirai les données restaurées pour vérifier leur contenu et je chronométrerai l’opération.
 
-## Compétences visées
+Je comparerai ensuite les sauvegardes et les snapshots de disques. Je documenterai le RTO, le délai de reprise visé, et le RPO, la perte de données acceptable. Le temps mesuré me donnera un point de comparaison avec l’objectif de reprise.
 
-Stratégies de sauvegarde, validation d’une restauration et planification de la reprise.
-
-## Exercices prévus
-
-- Protéger une VM de test avec un coffre Recovery Services et vérifier le point de récupération.
-- Restaurer vers une cible isolée, vérifier les données et relever la durée de l’opération.
-- Comparer les sauvegardes et les snapshots de disques, puis documenter les objectifs RTO et RPO.
-
-Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
+Je consignerai mes réglages et mes résultats dans le [modèle d’exercice](../exercise-template.md).
 
 [Accueil du portfolio](../README.md)

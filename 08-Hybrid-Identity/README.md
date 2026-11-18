@@ -2,20 +2,14 @@
 
 **État du module** · En attente
 
-## Objectif
+## Reprendre mon annuaire local et le relier à Entra ID
 
-Reprendre le [lab Active Directory local](../00-On-Premises-Active-Directory/README.md) sur SRV01 (Windows Server 2022), vérifier sa configuration, puis travailler sur son intégration avec un tenant Microsoft Entra ID de test et valider la synchronisation.
+Quand je reprendrai ce module, je repartirai de mon [lab Active Directory local](../00-On-Premises-Active-Directory/README.md) sur SRV01, sous Windows Server 2022. Je vérifierai sa configuration, puis je noterai les prérequis liés au suffixe UPN, au tenant de test et à la synchronisation.
 
-## Compétences visées
+Je limiterai Microsoft Entra Connect Sync à une OU de test. Je vérifierai ensuite quels objets ont été synchronisés dans Microsoft Entra ID. Je veux savoir comment contrôler le périmètre avant d’élargir un déploiement.
 
-Synchronisation d’annuaires, déploiement à portée limitée et identité des appareils.
+J’évaluerai aussi le hybrid join et je collecterai les preuves d’inscription des appareils. J’examinerai les dépendances liées à AD FS et à Intune.
 
-## Exercices prévus
-
-- Vérifier l’environnement AD local et documenter les prérequis liés au suffixe UPN, au tenant et à la synchronisation.
-- Limiter Microsoft Entra Connect Sync à une OU de test et vérifier la synchronisation des objets.
-- Évaluer le hybrid join et collecter les preuves d’inscription des appareils. Examiner les dépendances AD FS et Intune.
-
-Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
+Je consignerai mes réglages et mes résultats dans le [modèle d’exercice](../exercise-template.md).
 
 [Accueil du portfolio](../README.md)
