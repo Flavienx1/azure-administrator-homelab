@@ -1,22 +1,15 @@
 # Gouvernance Azure et RBAC
 
-**État du module** · Prévu
+**État du module** · Prochain module
 
-## Objectif
+## Qui peut faire quoi, et à quel niveau ?
 
-Organiser les ressources et vérifier le principe du moindre privilège.
+Dans Entra ID, j’ai attribué un rôle d’annuaire. Cette fois, je veux comprendre où attribuer un rôle Azure RBAC et jusqu’où les droits hérités s’appliquent. Je commencerai par dessiner la hiérarchie : tenant, groupes d’administration, abonnements, groupes de ressources et ressources.
 
-## Compétences visées
+Je testerai ensuite l’héritage d’un rôle. Avec une identité aux droits limités, je tenterai une action qui devrait être refusée. Ce test m’aidera à vérifier que j’ai accordé juste les droits nécessaires.
 
-Hiérarchie des ressources, portée du RBAC, Azure Policy et maîtrise des coûts.
+Je poserai des tags, puis j’utiliserai Azure Policy en mode audit pour voir ce qui remonte comme conforme ou non conforme. J’ajouterai un verrou pour vérifier son effet. Enfin, je configurerai une alerte budgétaire et je noterai les coûts prévisionnels.
 
-## Exercices prévus
-
-- Cartographier les portées du tenant, des groupes d’administration, des abonnements, des groupes de ressources et des ressources.
-- Tester l’héritage des rôles et vérifier le refus d’une opération avec une identité aux droits limités.
-- Appliquer des tags, une Azure Policy en mode audit et un verrou de ressource. Vérifier la conformité et l’effet du verrou.
-- Configurer une alerte budgétaire et documenter les coûts prévisionnels.
-
-Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
+Je consignerai mes réglages et mes résultats dans le [modèle d’exercice](../exercise-template.md).
 
 [Accueil du portfolio](../README.md)

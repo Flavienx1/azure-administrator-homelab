@@ -1,12 +1,12 @@
 # Lab d’administration Azure
 
-Je développe ce portfolio pour documenter ma pratique de l’administration système et cloud. Mon parcours va du support IT N1/N2 vers les fonctions d’administrateur Azure, de Cloud Engineer puis de DevOps Engineer. J’ai obtenu la certification Microsoft Azure Fundamentals (AZ-900). Ce dépôt rassemble les configurations du lab, les résultats de validation et les décisions prises lors des diagnostics.
+## Du support IT à l’administration Azure
 
-## Priorité actuelle
+J’ai commencé par le support IT N1/N2, puis j’ai obtenu la certification Microsoft Azure Fundamentals (AZ-900). J’ai lancé ce lab pour mettre les notions Azure en pratique. En entreprise, je veux savoir donner les bons accès, vérifier qu’une configuration fait ce que j’attends et remonter à la cause d’un incident avec les journaux. Je vise d’abord un poste d’administrateur Azure, puis je veux évoluer vers le cloud engineering et le DevOps.
 
-Les exercices pratiques du [module 01 — Microsoft Entra ID](01-Microsoft-Entra-ID/README.md) sont terminés. Le prochain module est la [gouvernance Azure et le RBAC](02-Azure-Governance-RBAC/README.md).
+J’ai commencé par [Microsoft Entra ID](01-Microsoft-Entra-ID/README.md). J’y ai terminé les exercices pratiques sur les comptes, les groupes et l’authentification. J’ai aussi suivi une connexion refusée jusqu’à sa cause : un compte désactivé. Je passerai ensuite à la [gouvernance Azure et au RBAC](02-Azure-Governance-RBAC/README.md) pour apprendre à organiser les ressources et à attribuer les droits au bon niveau.
 
-La [documentation Active Directory locale](00-On-Premises-Active-Directory/README.md) est conservée en attente. Le lab SRV01 sera repris au [module 08 — Identité hybride](08-Hybrid-Identity/README.md) pour travailler sur l’intégration entre AD DS et Microsoft Entra ID.
+J’ai mis en pause mon [lab Active Directory local](00-On-Premises-Active-Directory/README.md). Je reprendrai SRV01 dans le [module 08 — Identité hybride](08-Hybrid-Identity/README.md) pour travailler sur l’intégration entre AD DS et Microsoft Entra ID.
 
 ## Avancement des modules
 
@@ -22,22 +22,17 @@ La [documentation Active Directory locale](00-On-Premises-Active-Directory/READM
 | [Sauvegarde et reprise après sinistre](07-Backup-Disaster-Recovery/README.md) | Prévu | Vérifier la récupérabilité des données en chronométrant une restauration. |
 | [Identité hybride](08-Hybrid-Identity/README.md) | En attente | Relier un annuaire local vérifié à un tenant de test et valider la synchronisation. |
 
-**Prévu** désigne un exercice planifié. **Prochain module** indique la prochaine étape du parcours. **En attente** désigne un travail reporté à la phase d’identité hybride. Les preuves et limites de chaque exercice figurent dans sa documentation. Les exercices d’un même module peuvent avancer à des rythmes différents.
+## Un premier diagnostic dans mon lab local
 
-## Compétences documentées dans le lab local
-
-- Interpréter les résultats historiques des tests de connectivité et de DNS d’un contrôleur de domaine.
-- Distinguer la connectivité réseau de la découverte des services AD et identifier le résolveur incapable de répondre à la requête de localisation du domaine.
-
-Le [cas de diagnostic DNS](troubleshooting/dns-domain-controller-discovery.md) détaille les observations et les vérifications restantes.
+Dans mes essais sur le contrôleur de domaine, j’ai distingué la connectivité réseau de la découverte des services AD. J’ai identifié le résolveur qui ne répondait pas à la requête de localisation du domaine. J’ai gardé mes observations et les vérifications à reprendre dans le [cas de diagnostic DNS](troubleshooting/dns-domain-controller-discovery.md).
 
 ## Journal de progression
 
 | Date | Étape |
 | --- | --- |
-| 2026-11-12 | Structure du portfolio, documentation initiale du lab local et du diagnostic DNS historique, début du travail sur Microsoft Entra ID. |
-| 2026-11-12 | Priorité aux modules Azure 01 à 07. Microsoft Entra ID devient le module actif et le lab local est reporté au module 08. |
-| 2026-11-18 | Exercices pratiques Microsoft Entra ID terminés. Documentation des résultats et des captures du lab. Gouvernance Azure et RBAC désigné comme prochain module. |
+| 2026-11-12 | J’ai structuré le portfolio, documenté le lab local et le diagnostic DNS, puis commencé Microsoft Entra ID. |
+| 2026-11-12 | J’ai donné la priorité aux modules Azure 01 à 07 et mis le lab local de côté jusqu’au module 08. |
+| 2026-11-18 | J’ai terminé les exercices Entra ID et documenté mes résultats avec les captures du lab. J’ai choisi la gouvernance Azure et le RBAC comme prochaine étape. |
 
 ## Ressources du projet
 

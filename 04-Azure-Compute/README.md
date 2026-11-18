@@ -2,20 +2,14 @@
 
 **État du module** · Prévu
 
-## Objectif
+## Déployer une VM et expliquer mes choix
 
-Déployer et exploiter des VM en documentant les choix de disponibilité.
+Je déploierai une VM et je noterai son image, sa taille, ses disques et son mode d’accès. Je veux pouvoir reprendre ces choix plus tard et expliquer à quoi chacun sert. Une fois la VM en place, je vérifierai le fonctionnement d’une extension.
 
-## Compétences visées
+Je comparerai ensuite les zones de disponibilité, les groupes à haute disponibilité et les Virtual Machine Scale Sets. Je chercherai à comprendre dans quel cas chaque approche serait adaptée.
 
-Provisionnement de VM, choix des disques, disponibilité et gestion du cycle de vie.
+Je protégerai une VM dans le [module de sauvegarde et de reprise](../07-Backup-Disaster-Recovery/README.md). Je noterai aussi comment je nettoierai les ressources après les essais.
 
-## Exercices prévus
-
-- Déployer une VM et consigner son image, sa taille, ses disques et son mode d’accès.
-- Valider une extension et comparer les zones de disponibilité, les groupes à haute disponibilité et les Virtual Machine Scale Sets.
-- Activer la sauvegarde d’une VM dans le module de restauration et documenter le nettoyage des ressources.
-
-Consigner les étapes de configuration et les résultats observés dans le [modèle d’exercice](../exercise-template.md).
+Je consignerai mes réglages et mes résultats dans le [modèle d’exercice](../exercise-template.md).
 
 [Accueil du portfolio](../README.md)
