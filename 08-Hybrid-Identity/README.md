@@ -1,6 +1,6 @@
 # Identité hybride
 
-**État du module** · Prévu
+**État du module** · En attente
 
 ## Objectif
 
