@@ -2,17 +2,17 @@
 
 **État · Exercices pratiques terminés.** Les résultats ci-dessous distinguent les observations du portail, les confirmations issues des échanges et les preuves encore à joindre.
 
-Les exercices ont été réalisés dans le centre d’administration Microsoft Entra. Les actions décrites s’appuient sur les échanges retrouvés et sur les captures du lab. Les comptes internes sont désignés par leur fonction ou par un alias. Les captures publiées ont été recadrées ou masquées selon leur contenu.
+Les exercices ont été réalisés dans le centre d’administration Microsoft Entra. Les actions décrites s’appuient sur les échanges retrouvés et sur les captures du lab. Les captures affichent les noms fictifs et les identifiants du lab. Les données personnelles réelles sont masquées.
 
 ## 1. Utilisateurs · Gérer le cycle de vie d’un compte
 
 - **Objectif** · Créer, modifier, désactiver et supprimer une identité de test.
-- **Actions effectuées** · Création d’un compte membre, puis modification de l’attribut `department` d’un utilisateur de test pendant le contrôle du groupe dynamique. Un compte de test a été désactivé pendant l’exercice 8. Le dialogue de suppression d’un autre compte de test a été ouvert.
+- **Actions effectuées** · Création du compte membre Lucas Martin, puis modification de son attribut `department` pendant le contrôle du groupe dynamique. Un compte de test a été désactivé pendant l’exercice 8. Le dialogue de suppression d’un autre compte de test a été ouvert.
 - **Vérification et résultat** · La création a été vérifiée dans l’annuaire. L’état **Désactivé** est visible sur la fiche du compte concerné. Le dialogue de suppression montre l’opération proposée. La confirmation finale et la présence dans **Utilisateurs supprimés** restent à documenter.
 
-![Liste des utilisateurs du tenant, noms et UPN masqués.](../screenshots/01-microsoft-entra-id/utilisateurs.png)
+![Liste des utilisateurs du tenant avec les noms et UPN fictifs du lab.](../screenshots/01-microsoft-entra-id/utilisateurs.png)
 
-*Liste des utilisateurs du tenant, noms et UPN masqués.*
+*Liste des utilisateurs du tenant avec les noms et UPN fictifs du lab.*
 
 ![État Désactivé sur la fiche d’un compte de test.](../screenshots/01-microsoft-entra-id/compte-desactive.png)
 
@@ -44,8 +44,8 @@ Les exercices ont été réalisés dans le centre d’administration Microsoft E
 ## 3. Permissions · Déléguer une réinitialisation de mot de passe
 
 - **Objectif** · Déléguer une tâche de support avec un rôle Microsoft Entra adapté.
-- **Actions effectuées** · Attribution directe du rôle intégré **Administrateur de mots de passe** à un compte de test. La portée affichée est le répertoire, au niveau de l’organisation.
-- **Vérification et résultat** · Le rôle apparaît dans **Rôles affectés**. Le suivi de l’exercice rapporte une réinitialisation réussie sur un autre compte de test. Une preuve du résultat de la réinitialisation et un éventuel test de refus hors du périmètre du rôle restent à joindre.
+- **Actions effectuées** · Attribution directe du rôle intégré **Administrateur de mots de passe** au compte de test Lucas Martin. La portée affichée est le répertoire, au niveau de l’organisation.
+- **Vérification et résultat** · Le rôle apparaît dans **Rôles affectés**. Le suivi de l’exercice rapporte une réinitialisation réussie sur le compte de test Emma Bernard. Une preuve du résultat de la réinitialisation et un éventuel test de refus hors du périmètre du rôle restent à joindre.
 
 ![Attribution directe du rôle intégré au niveau du répertoire.](../screenshots/01-microsoft-entra-id/role-annuaire.png)
 
