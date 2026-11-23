@@ -6,14 +6,24 @@ J’ai pris un compte de stockage comme point de départ. Je voulais comprendre 
 
 ## 1. Je donne à Emma accès aux blobs
 
-J’ai créé le compte de stockage `forgithub`. J’ai ensuite ajouté `Emma.Bernard` à un groupe disposant des rôles **Lecteur** et **Lecteur des données blob du stockage**. Emma reçoit ces droits par son groupe.
+J’ai créé le compte de stockage `forgithub`. J’ai ensuite ajouté `Emma.Bernard` à un groupe disposant des rôles **Lecteur** et **Lecteur des données blob du stockage**. J’avais prévu de lui transmettre ces droits par ce groupe. Dans la vue IAM fournie ensuite, j’ai relevé les deux rôles au nom d’Emma, avec le type **Utilisateur** et la portée **Cette ressource**, sur `rg-gouvernance-prod`. Cette capture documente des attributions à l’utilisatrice. L’appartenance au groupe reste à illustrer par une capture dédiée.
 
 | Rôle | Ce qu’Emma peut lire |
 | --- | --- |
 | Lecteur | Elle peut consulter les ressources Azure et leur configuration dans la portée attribuée. |
 | Lecteur des données blob du stockage | Elle peut lire les conteneurs et les données blob dans la portée attribuée. |
 
-Je voulais distinguer la consultation du compte de stockage de la lecture des données qu’il contient. J’ai attribué les deux rôles au groupe pour couvrir ces deux besoins. Je n’ai pas encore joint de capture des attributions du groupe ni du résultat de lecture d’un blob avec Emma.
+Je voulais distinguer la consultation du compte de stockage de la lecture des données qu’il contient. J’ai ensuite testé l’accès depuis la session d’Emma. Dans le conteneur `blocgithub` de `forgithub`, j’ai retrouvé `tes.2t.txt`, affiché avec une taille de 9 B. Le portail indiquait une authentification par compte d’utilisateur Microsoft Entra dans la session d’Emma.
+
+J’ai confirmé avoir lu le blob avec Emma. La capture jointe montre l’accès au conteneur et la liste des blobs. Il me reste à joindre la vue du contenu ou le résultat de son ouverture pour illustrer cette dernière étape.
+
+![La vue IAM montre Emma Bernard avec les rôles Lecteur et Lecteur des données Blob du stockage sur rg-gouvernance-prod.](../screenshots/02-azure-governance-rbac/roles-emma.png)
+
+*La vue IAM montre Emma Bernard avec les rôles Lecteur et Lecteur des données Blob du stockage sur rg-gouvernance-prod.*
+
+![Dans la session d’Emma, le conteneur blocgithub affiche le blob tes.2t.txt avec une authentification Microsoft Entra.](../screenshots/02-azure-governance-rbac/blobs-session-emma.png)
+
+*Dans la session d’Emma, le conteneur blocgithub affiche le blob tes.2t.txt avec une authentification Microsoft Entra.*
 
 ![Le déploiement de forgithub a réussi dans rg-gouvernance-prod.](../screenshots/02-azure-governance-rbac/creation-forgithub.png)
 
@@ -101,7 +111,15 @@ Je voulais retrouver cette balise sur les deux comptes de stockage déjà créé
 
 Le récapitulatif de l’attribution indiquait une identité managée affectée par le système et aucune tâche de correction créée à cette étape. J’ai ensuite lancé une tâche de correction pour appliquer la balise aux ressources existantes. Le formulaire listait `forgithub` et `forgithub2`.
 
-Une capture montre `projet1` avec la valeur `01` sur `forgithub2`. Je n’ai pas de capture équivalente pour `forgithub`. Pour les deux comptes ensemble, j’arrête donc le récit au lancement de la correction.
+Après la correction, j’ai ouvert les étiquettes de chacun des deux comptes. J’ai vérifié la même clé `projet1` et la même valeur `01` sur `forgithub` et `forgithub2`. Les deux captures confirment le résultat sur chaque ressource.
+
+![Le compte forgithub porte la balise projet1 de valeur 01.](../screenshots/02-azure-governance-rbac/balise-forgithub.png)
+
+*Le compte forgithub porte la balise projet1 de valeur 01.*
+
+![Le compte forgithub2 porte également la balise projet1 de valeur 01.](../screenshots/02-azure-governance-rbac/balise-forgithub2.png)
+
+*Le compte forgithub2 porte également la balise projet1 de valeur 01.*
 
 ![Le formulaire de correction liste forgithub et forgithub2 parmi les ressources à corriger.](../screenshots/02-azure-governance-rbac/correction-balise.png)
 
