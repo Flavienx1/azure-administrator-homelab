@@ -4,7 +4,7 @@
 
 J’ai commencé par le support IT N1/N2, puis j’ai obtenu la certification Microsoft Azure Fundamentals (AZ-900). J’ai lancé ce lab pour mettre les notions Azure en pratique. En entreprise, je veux savoir donner les bons accès, vérifier qu’une configuration fait ce que j’attends et remonter à la cause d’un incident avec les journaux. Je vise d’abord un poste d’administrateur Azure, puis je veux évoluer vers le cloud engineering et le DevOps.
 
-J’ai commencé par [Microsoft Entra ID](01-Microsoft-Entra-ID/README.md). J’y ai terminé les exercices pratiques sur les comptes, les groupes et l’authentification. J’ai aussi suivi une connexion refusée jusqu’à sa cause : un compte désactivé. Je passerai ensuite à la [gouvernance Azure et au RBAC](02-Azure-Governance-RBAC/README.md) pour apprendre à organiser les ressources et à attribuer les droits au bon niveau.
+J’ai commencé par [Microsoft Entra ID](01-Microsoft-Entra-ID/README.md). J’y ai terminé les exercices pratiques sur les comptes, les groupes et l’authentification. J’ai aussi suivi une connexion refusée jusqu’à sa cause : un compte désactivé. J’ai ensuite testé les droits, les verrous et Azure Policy dans le [module de gouvernance Azure et RBAC](02-Azure-Governance-RBAC/README.md).
 
 J’ai mis en pause mon [lab Active Directory local](00-On-Premises-Active-Directory/README.md). Je reprendrai SRV01 dans le [module 08 — Identité hybride](08-Hybrid-Identity/README.md) pour travailler sur l’intégration entre AD DS et Microsoft Entra ID.
 
@@ -14,7 +14,7 @@ J’ai mis en pause mon [lab Active Directory local](00-On-Premises-Active-Direc
 | --- | --- | --- |
 | [Active Directory local](00-On-Premises-Active-Directory/README.md) | En attente | Reprendre la validation du lab local au module 08. |
 | [Microsoft Entra ID](01-Microsoft-Entra-ID/README.md) | Exercices pratiques terminés | Gérer les identités, les accès et l’authentification dans un tenant cloud. |
-| [Gouvernance Azure et RBAC](02-Azure-Governance-RBAC/README.md) | Prochain module | Organiser les ressources et vérifier le principe du moindre privilège. |
+| [Gouvernance Azure et RBAC](02-Azure-Governance-RBAC/README.md) | Tests pratiques documentés | Tester RBAC, les verrous, Audit/Deny, une exemption et la correction des balises. |
 | [Réseau Azure](03-Azure-Networking/README.md) | Prévu | Mettre en place une connectivité privée et diagnostiquer les flux réseau. |
 | [Calcul Azure](04-Azure-Compute/README.md) | Prévu | Déployer et exploiter des VM en documentant les choix de disponibilité. |
 | [Stockage Azure](05-Azure-Storage/README.md) | Prévu | Gérer les accès, la redondance et le cycle de vie des données. |
